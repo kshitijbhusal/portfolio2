@@ -8,9 +8,51 @@ import { MapPin } from 'lucide-react';
 
 import { Moon } from 'lucide-react';
 import { Sun } from 'lucide-react';
+import { Timeline } from './components/ui/timeline'
 
 function App() {
   const [light, setLight] = useState(false)
+
+  const data = [{
+    title: "2024",
+    content: (
+      <div>
+        <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          Built and launched Aceternity UI and Aceternity UI Pro from scratch
+        </p>
+        <div className="grid grid-cols-2 gap-4">
+          <img
+            src="https://assets.aceternity.com/templates/startup-1.webp"
+            alt="startup template"
+            width={500}
+            height={500}
+            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+          />
+          <img
+            src="https://assets.aceternity.com/templates/startup-2.webp"
+            alt="startup template"
+            width={500}
+            height={500}
+            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+          />
+          <img
+            src="https://assets.aceternity.com/templates/startup-3.webp"
+            alt="startup template"
+            width={500}
+            height={500}
+            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+          />
+          <img
+            src="https://assets.aceternity.com/templates/startup-4.webp"
+            alt="startup template"
+            width={500}
+            height={500}
+            className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+          />
+        </div>
+      </div>
+    ),
+  },]
 
   return (
     <>
@@ -70,10 +112,18 @@ function App() {
             </section>
 
 
-            {/* ---------------------------Experience Section------------------------ */}
+            {/* ---------------------------Project Section------------------------ */}
 
-            <section className='bg-red-500 text-justify'>
-              <h1>sadfjsadkfskf Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit fugiat fuga corporis esse. Repellat, at ab perspiciatis libero tempora cum quis ullam deleniti doloribus maiores nemo quibusdam natus consectetur necessitatibus, fuga, illum error? Nisi at dignissimos non ullam nesciunt incidunt adipisci delectus facilis eveniet illo esse nulla ab est vero numquam repellat officiis consectetur, alias voluptatibus voluptas modi fuga. Sunt ex ullam, natus delectus dolores eligendi suscipit nulla possimus, libero, molestiae labore dolorem. Rem iure magni unde, impedit velit quis nulla sunt, corrupti excepturi deserunt, eveniet ex illo consectetur at natus dicta? Expedita assumenda iusto nisi alias error provident suscipit.</h1>
+            <section className='p-2 mt-12'>
+              <Timeline data={data} />
+              <section className='bg-green-500 text-justify'>
+
+
+
+              </section>
+
+
+              {/* ---------------------------Experience Section------------------------ */}
 
 
             </section>
