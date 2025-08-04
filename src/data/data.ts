@@ -1,31 +1,31 @@
 export const projectData = [
     {
-        title: "Coinruma",
-        description: "AI-powered platform for instant, easy-to-understand breakdowns of any crypto and blockchain project.",
-        stack: ["NextJs", "TailwindCSS", "GeminiAPi"],
+        title: "SajiloIPO",
+        description: "Bulk IPO application webapp for Investors.",
+        stack: ["NextJs", "TailwindCSS", "Playwright"],
         links: {
-            gitbut: "https://github.com/kshitijbhusal/coinruma",
-            live: "https://coinruma.vercel.app/",
+            github: "https://github.com/kshitijbhusal/",
+            live: "https://sajiloipo.vercel.app/",
         }
 
     },
     {
         title: "Coinruma",
         description: "AI-powered platform for instant, easy-to-understand breakdowns of any crypto and blockchain project.",
-        stack: ["NextJs", "TailwindCSS", "GeminiAPi"],
+        stack: ["NextJs", "TailwindCSS", "GeminiAPI"],
         links: {
-            gitbut: "https://github.com/kshitijbhusal/coinruma",
+            github: "https://github.com/kshitijbhusal/coinruma",
             live: "https://coinruma.vercel.app/",
         }
 
     },
     {
-        title: "Coinruma",
-        description: "AI-powered platform for instant, easy-to-understand breakdowns of any crypto and blockchain project.",
-        stack: ["NextJs", "TailwindCSS", "GeminiAPi"],
+        title: "SwiftSend",
+        description: "Instant secure messeging tool without login and password.",
+        stack: ["React", "Express", "MongoDB", "TailwindCSS"],
         links: {
-            gitbut: "https://github.com/kshitijbhusal/coinruma",
-            live: "https://coinruma.vercel.app/",
+            github: "https://github.com/kshitijbhusal/swiftsend",
+            live: "https://swiftsend-five.vercel.app",
         }
 
     },
