@@ -22,10 +22,10 @@ export const projectData = [
     {
         title: "SwiftSend",
         description: "Instant secure messeging tool without login and password.",
-        stack: ["React", "Express", "MongoDB", "TailwindCSS"],
+        stack: ["NextJs", "TailwindCSS", "Prisma"],
         links: {
-            github: "https://github.com/kshitijbhusal/swiftsend",
-            live: "https://swiftsend-five.vercel.app",
+            github: "https://github.com/kshitijbhusal/swiftsend-next",
+            live: "https://swiftsend-next.vercel.app/",
         }
 
     },

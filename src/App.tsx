@@ -2,7 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import pfp from "/pfp.jpg"
+import pfp from "../public/profile.jpg"
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 
 import { MapPin } from 'lucide-react';
 
@@ -70,7 +72,7 @@ function App() {
 
 
 
-      <section className='h-full grid md:place-content-center  md:flex  '>
+      <section className='h-full grid md:place-content-center  md:flex   '>
 
 
         <div className='  md:w-[60%]  text-text p-4  '>
@@ -98,7 +100,7 @@ function App() {
           <div className=' p-2  '>
             <div className='flex justify-between items-center'>
 
-              <img className='size-30 object-cover  rounded-xl  ' src={pfp} alt="" />
+              <img className='size-30 object-cover  object-top opacity-90  rounded-xl  ' src={pfp} alt="" />
               <div>
                 <h1 className='text-text text-3xl font-semibold leading-relaxed'>Hi! I'm Kshitij</h1>
                 <p className='text-text-muted' >fullstack developer | web3 </p>
@@ -116,9 +118,15 @@ function App() {
 
             <section className='p-2 mt-12'>
               <Timeline data={data} />
-              <section className='bg-green-500 text-justify'>
 
 
+              <section className='bg-rd-50 flex flex-col gap-y-2 items-center  bg-bg-light/30  border-2  border-neutral-100/20 border-x-violet-600/50 py-4  rounded-xl '>
+                <h1 className='text-xl mb-2'>Find me on</h1>
+                <ul className='flex gap-4  '>
+                  <li><a href="https://www.x.com/steezcodes" target='_blank' ><FaXTwitter size={24} className='hover:opacity-50 ' /> </a></li>
+                  <li><a href="https://www.linkedin.com/in/kshitijbhusal/" target='_blank' > <FaLinkedin size={24} className='hover:opacity-50 ' /> </a></li>
+                </ul>
+                <p className='text-text-muted backdrop' >kshitijbhusal64@gmail.com</p>
 
               </section>
 

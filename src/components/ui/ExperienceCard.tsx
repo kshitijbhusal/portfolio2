@@ -25,6 +25,8 @@ const ExperienceCard = ({ experience }: any) => {
 
                 </div>
 
+
+
             </section>
         </>
     )
