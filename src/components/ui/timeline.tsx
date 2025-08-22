@@ -10,15 +10,9 @@ import {
     useTransform,
     motion,
 } from "motion/react";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ExperienceCard from './ExperienceCard';
 import { experienceData } from '../../data/experienceData';
-// import { Link } from 'react-router-dom';
-
-interface TimelineEntry {
-    title: string;
-    content: React.ReactNode;
-}
 
 export const Timeline = () => {
 
