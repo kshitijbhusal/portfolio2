@@ -6,7 +6,6 @@ import { Link, GithubIcon } from 'lucide-react';
 
 
 import {
-    useMotionValueEvent,
     useScroll,
     useTransform,
     motion,
@@ -21,7 +20,8 @@ interface TimelineEntry {
     content: React.ReactNode;
 }
 
-export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
+export const Timeline = () => {
+
     const ref = useRef<HTMLDivElement>(null);
     const containerRef = useRef<HTMLDivElement>(null);
     const [height, setHeight] = useState(0);
@@ -35,7 +35,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
     const { scrollYProgress } = useScroll({
         target: containerRef,
-        offset: ["start 10%", "end 90%"],
+        offset: ["start 10%", "end 95%"],
     });
 
     const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
@@ -88,7 +88,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                     style={{
                         height: height + "px",
                     }}
-                    className="absolute md:left-[-80px] left-[-20px] top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%]  [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] "
+                    className="absolute md:left-[-80px] left-[-20px] top-0 overflow-hidden w-[20px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%]  [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] "
                 >
                     <motion.div
                         style={{
@@ -130,9 +130,9 @@ function ProjectCard({ project }: any) {
                 <div className='space-y-2'>
                     <p className='max-w-96 mb-6 '>{project.description} </p>
                     <div className='flex gap-4'>
-                        <p className='px-2 py-1 font-semibold rounded-md bg-stone-800/20 border border-stone-600/80 backdrop-blur-lg   ' >{project.stack[0]}</p>
-                        <p className='px-2 py-1 font-semibold rounded-md bg-stone-800/20 border border-stone-600/80 backdrop-blur-lg  ' >{project.stack[1]}</p>
-                        <p className='px-2 py-1 font-semibold rounded-md bg-stone-800/20 border border-stone-600/80 backdrop-blur-lg' >{project.stack[2]}</p>
+                        <p className='px-2 py-1 font-semibold rounded-md bg-bg-dark/50 border border-stone-600/80 backdrop-blur-lg   ' >{project.stack[0]}</p>
+                        <p className='px-2 py-1 font-semibold rounded-md bg-bg-dark/50 border border-stone-600/80 backdrop-blur-lg  ' >{project.stack[1]}</p>
+                        <p className='px-2 py-1 font-semibold rounded-md bg-bg-dark/50 border border-stone-600/80 backdrop-blur-lg' >{project.stack[2]}</p>
 
                     </div>
                 </div>
